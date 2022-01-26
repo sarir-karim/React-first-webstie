@@ -1,0 +1,128 @@
+#hero-section{
+    /* background-image: url(../images/race1.jpg); */
+    background-size: cover;
+}
+
+#hero-section{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(248, 182, 82, 0.6); */
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+}
+
+#hero-section .carousel-item{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-color: rgba(248, 182, 82, 0.6);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero-section .carousel-item::before {
+    content: "";
+    background-color: rgba(12, 11, 10, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#hero-section h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#hero-section h2 span {
+    color: #ffb03b;
+}
+
+#hero-section p {
+    width: 80%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+}
+
+#hero-section .btn-menu,
+#hero-section .btn-book {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 0 10px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    color: #fff;
+    border: 2px solid #ffb03b;
+    margin-bottom: 5rem;
+}
+
+ a{
+    text-decoration: none !important;
+}
+
+#hero-section .btn-menu:hover,
+#hero-section .btn-book:hover {
+    background: #ffb03b;
+    color: #fff;
+    transform: skewY(2deg);
+}
+
+
+@media (max-width: 768px) {
+    #hero-section h2 {
+        font-size: 28px;
+    }
+    #hero-section .btn-menu,
+#hero-section .btn-book{
+    margin-bottom: 0;
+}
+}
+
+@media (min-width: 1024px) {
+    #hero-section .carousel-control-prev,
+    #hero-section .carousel-control-next {
+        width: 5%;
+    }
+}
+
+
+/* .carousel-control-next-icon{
+    display: visible;
+}
+
+.carousel-control-prev-icon{
+    display: visible;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 0px;
+    height: 0px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-clip: padding-box;
+    border: 1px solid #fff;
+    opacity: .5;
+    transition: opacity .6s ease;
+    margin-bottom: -60px;
+    border-radius: 100%;
+
+} */

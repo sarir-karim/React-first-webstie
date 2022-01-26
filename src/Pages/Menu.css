@@ -1,0 +1,87 @@
+/* *****************
+    Menu Styling
+*************** */
+
+.menu-container #menu-flters{
+    padding: 0;
+    margin: 0 auto 0 auto;
+    list-style: none;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.menu-container #menu-flters li:hover{
+    transform: skewY(5deg);
+    transition: 0.5s;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.18);
+}
+
+.menu-container #menu-flters li{
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height:1;
+    color: #444444;
+    margin: 0 3px 10px 3px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+    border: 2px solid #ffb03b;
+    border-radius: 50px;
+}
+
+.menu-container #menu-flters li:hover,
+.menu-container #menu-flters li.filters-active{
+    color: #fff;
+    background: #FFB03B;
+}
+
+.menu-container #menu-flters li:last-child{
+    margin-right: 0;
+}
+
+.menu-container .menu-content {
+    margin-top: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-container .menu-content::after{
+    content:"......................................................................" "...................................................................." "....................................................................""";
+    position: absolute;
+    left: 20px;
+    right:0;
+    top: -4px;
+    z-index: 1;
+    color: #dad8d4;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.menu-container .menu-content a{
+    padding-right: 10px;
+    background: #fff;
+    position: relative;
+    z-index: 3;
+    padding: 0 10px;
+    font-weight: 700;
+    color: #FFB03B;
+
+}
+
+.menu-container .menu-content span {
+    background: #fff;
+    position: relative;
+    z-index: 3;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.menu-container .menu-ingredients {
+    font-style: italic;
+    font-size: 14px;
+            font-family: "Comic Neue", sans-serif;
+    color: #948c81;
+}

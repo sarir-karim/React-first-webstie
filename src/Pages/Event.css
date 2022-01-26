@@ -1,0 +1,128 @@
+.event-container{
+    background: url(../images/bg-2.jpg) no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.event-container::before{
+    content:"";
+    background-color: rgb(21, 11, 10, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.event-container .section-title h2{
+    color: #fff;
+    font-family: "Satisfy", sans-serif;
+}
+
+.event-container .container{
+    position: relative
+}
+
+@media (min-width: 1024px){
+    .event-container{
+        background-attachment: fixed;
+    }
+}
+
+.event-container .events-carousel{
+    background: rgba(225,225,225,0.08);
+    padding: 30px;
+}
+
+.event-container .event-item{
+    color: #fff;
+}
+
+.event-container .event-item h3{
+    font-weight: 600;
+    font-size: 26px;
+    color: #ffb03b
+}
+
+.event-container .event-item .price {
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.event-container .event-item .price span{
+    border-bottom: 2px solid #ffb03b;
+}
+
+.event-container .event-item ul{
+    list-style: none;
+    padding: 0
+}
+
+.event-container .event-item ul li{
+    padding-bottom: 10px;
+}
+
+.event-container .event-item i{
+    font-size: 20px;
+    padding-right: 4px;
+    color: #ffb03b;
+}
+
+.event-container .event-item p:last-child{
+    margin-bottom: 0;
+}
+
+.event-container .swiper-pagination{
+    margin-top: 20px;
+    position: relative;
+}
+
+.event .swiper-pagination .swiper-paginaion-bullet{
+    width: 12px;
+    height: 12px;
+    background: rgba(225,225,225,0.08);
+    opacity: 1;
+}
+
+
+.event-container .swiper-pagination .swiper-paginaion-bullet-active{
+    background-color: #ffb03b;
+}
+
+.event-container .swiper-slide{
+    padding-bottom: 20px;
+}
+
+/* .carousel-control-next-icon{
+    display: none;
+}
+
+.carousel-control-prev-icon{
+    display: none;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-clip: padding-box;
+    border: 1px solid #fff;
+    opacity: .5;
+    transition: opacity .6s ease;
+    margin-bottom: -60px;
+    border-radius: 100%;
+
+} */
+
+.carousel-indicators .active{
+    color: #ffb03b;
+    background-color: #ffb04b
+}

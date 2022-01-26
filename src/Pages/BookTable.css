@@ -1,0 +1,26 @@
+.form-button{
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #ffb03b;
+    font-weight: 500;
+    border:none;
+    font-size: 16px;
+    letter-spacing:1px
+}
+.form-button:hover{
+    background: #ffb04b;
+    transform: skewX(20deg)
+}
+h2{
+    font-family: s;
+}
+
+.form-main{
+    
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 30px;
+}
+
+.form-control{
+    height: 7vh;
+}

@@ -1,0 +1,146 @@
+h1,
+h2,
+h3 {
+  letter-spacing:  0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "Satisfy", sans-serif;
+  font-weight: bold;
+}
+
+span{
+  color: #ffb03e;
+}
+
+h3 {
+  font-size: 2.0rem;
+  color: #3E4741;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family:  sans-serif;
+  color: #ffb03e;
+
+}
+
+.item-text{
+  margin-bottom: 1.25rem;
+  color: hsl(210, 22%, 49%);
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+.menu {
+  padding: 5rem 0;
+}
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: #c59d5f;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-btn {
+  cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height:1;
+    color: #444444;
+    margin: 0 3px 10px 3px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+    border: 2px solid #ffb03b;
+    border-radius: 50px;
+}
+
+.filter-btn:hover{
+  transform: skewY(5deg);
+  transition: 0.5s;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.18);
+}
+.active {
+  border-bottom: 2px solid;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+
+.menu-item {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 25rem;
+}
+
+.item-info header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px dotted hsl(210, 22%, 49%);
+}
+.item-info h4 {
+  margin-bottom: 0.5rem;
+}
+.price {
+  color: #3E4741;
+}
+.item-text {
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .menu-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+  .photo {
+    height: 175px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo {
+    height: 150px;
+  }
+}

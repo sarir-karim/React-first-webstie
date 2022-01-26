@@ -1,0 +1,54 @@
+.why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+}
+.why-us h3{
+    font-size: 35px;
+    font-weight: bold;
+    color: #5F5950;
+}
+.why-us span{
+  color:#FFB04D;
+
+}
+.why-us .box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffcf88;
+}
+
+.why-us .box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: #6c665c;
+}
+
+.why-us .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.why-us .box:hover {
+    background: #ffb03b;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.18);
+    transform: skew(5deg);
+    border: 1px solid #3333;
+    border-radius: 50px;
+}
+
+.why-us .box:hover span,
+.why-us .box:hover h4,
+.why-us .box:hover p {
+    color: #fff;
+    background-image: url(../images//bg-1.jpg);
+    text-align:center;
+    border-image: 2px;
+}

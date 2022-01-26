@@ -1,0 +1,104 @@
+.chefs-container{
+    background-image: url(https://images.pexels.com/photos/263041/pexels-photo-263041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    padding: 60px 0;
+    background-position: center;
+    position: relative; 
+}
+
+.chefs-container::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    color:rgba(255, 255, 255, 0.8) ;
+    z-index: 9;
+}
+
+.chefs-container .container{
+    position: relative;
+    z-index: 10;
+}
+
+.chefs-container .member{
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+.chefs-container .section-title h2,p{
+    /* color: #fff */
+}
+
+.chefs-container .member .pic{
+    overflow: hidden;
+    height: 70vh;
+}
+
+.chefs-container .member .member-info{
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    bottom: 100px;
+    left: 0px;
+    right: 20px;
+    background: #fff;;
+    padding: 30px 0;
+    color: #433f39;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.chefs-container .member .h4{
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color:#6c665c;
+    position: relative;
+    padding-bottom: 10px;
+    font-family: 'poppins',sans-serif;
+}
+
+.chefs-container .member h4::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #ffcf88;
+    bottom: 0;
+    left: calc(50%, 25px);
+}
+
+.chefs-container .member span{
+    font-style: italic;
+    display: block;
+    font-size: 16px;
+}
+
+.chefs-container .member .social{
+    margin-top: 15px;
+}
+
+.chefs-container .social a {
+    font-size:16px;
+    margin: 0 20px;
+    color: #6c665c;
+    /* color: #b3a897; */
+    
+}
+
+@media (max-width: 992px){
+    .chefs-container .member{
+        margin-bottom: 110px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .chefs{
+        background-attachment: fixed;
+    }
+}
